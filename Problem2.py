@@ -1,5 +1,9 @@
-#Problem2.py
-#Project Euler problem 2
+#Zane Serhan
+#Date: 3/3/2026
+#Assignment: Problem2.py
+#Project Euler Problem #2
+#EvenFivonacciNumbers
+#Provided problem
 
 from NumberTests import isEven
 from NumberTests import fibonacciSequence

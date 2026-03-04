@@ -8,9 +8,24 @@ def isThreeOrFive(n):
   else:
     return False
 
+def getFactors(num):
+  factors = []
+  for f in range(1, num//2 + 1):
+    if num % f == 0:
+      factors.append(f)
+  return factors
+
 def isPrime(p):
   """Returns boolean (True/False) if the value given is prime."""
-
+  if p <= 1:
+    return False
+  if p == 2:
+    return True
+  if isEven(p):
+    return False
+  for div in range(3, p//2 + 1, 2):
+    if p % div == 0:
+      return False
   return True
 
 def isEven(n):
